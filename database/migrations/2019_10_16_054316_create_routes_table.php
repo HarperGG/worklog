@@ -23,7 +23,7 @@ class CreateRoutesTable extends Migration
             $table->dateTime('study_route_create_time')->comment('填写时间');
             $table->dateTime('study_route_update_time')->comment('更新时间');
             $table->integer('study_route_cover_picture_id')->comment('封面图id');
-            $table->string('study_route_cover_video_id',100)->comment('视频id');
+            $table->string('study_route_video_id',100)->comment('视频id');
         });
     }
 
