@@ -24,7 +24,7 @@ class CreateArticlesTable extends Migration
             $table->dateTime('article_create_time')->comment('发表时间');
             $table->dateTime('article_update_time')->comment('更新时间');
             $table->integer('cover_picture_id')->comment('封面id');
-            $table->string('cover_videoId',100)->comment('视频id');
+            $table->string('article_video_id',100)->comment('视频id');
         });
     }
 
