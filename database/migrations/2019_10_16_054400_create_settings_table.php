@@ -15,11 +15,11 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('system_settings', function (Blueprint $table) {
             $table->increments('system_setting_id');
-            $table->string('system_setting_site_record_info')->comment('备案');
-            $table->string('system_setting_other')->comment('其他');
-            $table->longText('system_setting_wx_qrcode')->comment('wx二维码的base64');
-            $table->string('system_accessKeyId')->comment('ALIYUN_accessKeyId');
-            $table->string('system_accessKeySecret')->comment('ALIYUN_accessKeySecret');
+            $table->string('system_setting_site_record_info')->nullable()->comment('备案');
+            $table->string('system_setting_other')->nullable()->comment('其他');
+            $table->longText('system_setting_wx_qrcode')->nullable()->comment('wx二维码的base64');
+            $table->string('system_accessKeyId')->nullable()->comment('ALIYUN_accessKeyId');
+            $table->string('system_accessKeySecret')->nullable()->comment('ALIYUN_accessKeySecret');
         });
     }
 

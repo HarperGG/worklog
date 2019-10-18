@@ -20,11 +20,11 @@ class CreateArticlesTable extends Migration
             $table->longText('article_content')->comment('内容');
             $table->integer('article_user_id')->comment('发表人id');
             $table->integer('article_category_id')->comment('分类表id');
-            $table->string('article_state',1)->comment('状态');
+            $table->string('article_state',1)->default('1')->comment('状态 0为禁用 1为启用');
             $table->dateTime('article_create_time')->comment('发表时间');
             $table->dateTime('article_update_time')->comment('更新时间');
             $table->integer('cover_picture_id')->comment('封面id');
-            $table->string('article_video_id',100)->comment('视频id');
+            $table->string('article_video_id',100)->nullable()->comment('视频id');
         });
     }
 

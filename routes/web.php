@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/**
+ * 杨泽淼
+ */
+
+ //AuthController
+ Route::get('/auth/login', 'Auth\AuthController@login');

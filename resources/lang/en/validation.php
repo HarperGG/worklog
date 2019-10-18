@@ -109,7 +109,7 @@ return [
 |
 */
     'attributes' => [
-        // 'name'         => '名字',
-        // 'age'         => '年龄',
+         'user_number'         => '学号',
+         'user_password'         => '密码',
     ],
 ];
