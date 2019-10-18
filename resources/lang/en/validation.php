@@ -109,7 +109,9 @@ return [
 |
 */
     'attributes' => [
-         'user_number'         => '学号',
-         'user_password'         => '密码',
+        'user_number'                         => '学号',
+        'user_password'                       => '密码',
+        'new_password'                        => '新密码',
+        'new_password_confirmation'           => '确认密码',
     ],
 ];

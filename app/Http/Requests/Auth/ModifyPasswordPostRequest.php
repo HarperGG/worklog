@@ -6,7 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
-class LoginPostRequest extends FormRequest
+class ModifyPasswordPostRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,8 +26,8 @@ class LoginPostRequest extends FormRequest
     public function rules()
     {
         return [
-            'user_number' => 'required|digits:11|string',
-            'user_password' => 'required|between:6,16|string'
+            'new_password' => 'required|confirmed|string|between:6,16',
+            'new_password_confirmation'=>'required|string|between:6,16'
         ];
     }
 

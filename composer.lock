@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7904d07d1e1765a0a199aa11d6301a3",
+    "content-hash": "319d0bc36b854e30ee23818f7b6a831d",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2923,6 +2923,57 @@
                 "environment"
             ],
             "time": "2019-01-29T11:11:52+00:00"
+        },
+        {
+            "name": "wangjian/aliyun_vod",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wangsir0624/aliyun_vod.git",
+                "reference": "cc165ef1e28c197eb50f4663704ca3ad5c576e76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wangsir0624/aliyun_vod/zipball/cc165ef1e28c197eb50f4663704ca3ad5c576e76",
+                "reference": "cc165ef1e28c197eb50f4663704ca3ad5c576e76",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Wangjian\\Alivod\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wangjian",
+                    "email": "1636801376@qq.com"
+                }
+            ],
+            "description": "阿里云点播PHP SDK",
+            "keywords": [
+                "php",
+                "sdk",
+                "vod",
+                "阿里云"
+            ],
+            "time": "2017-06-30T03:39:41+00:00"
         }
     ],
     "packages-dev": [
