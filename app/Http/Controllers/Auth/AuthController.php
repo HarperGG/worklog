@@ -31,7 +31,7 @@ class AuthController extends Controller
                 return response()->fail(100, '用户名或密码错误', null);
             }
         } catch (\Exception $ex) {
-            return response()->fail(100, '服务器错误', null);
+            return response()->fail(100, '服务器错误', null, 500);
         }
     }
     /**
@@ -51,7 +51,7 @@ class AuthController extends Controller
                 return response()->fail(100, '修改密码失败', null);
             }
         } catch (\Exception $ex) {
-            return response()->fail(100, '服务器错误', null);
+            return response()->fail(100, '服务器错误', null, 500);
         }
     }
 
@@ -71,7 +71,7 @@ class AuthController extends Controller
                 return response()->success(200, '成功退出登陆', null);
             }
         } catch (\Exception $ex) {
-            return response()->fail(100, '服务器错误', null);
+            return response()->fail(100, '服务器错误', null, 500);
         }
     }
 

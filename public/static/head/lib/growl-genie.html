@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>html5消息提示框 | Growl-Style Genie</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/ns-default.css" />
+	<link rel="stylesheet" type="text/css" href="css/ns-style-growl.css" />
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<body class="color-10">
+	<div class="container">
+		<div class="main clearfix">
+			<div class="column">
+				<p class="small">点击按钮弹出提示框:</p>
+				<button id="notification-trigger" class="progress-button">
+					<span class="content">显示提示框</span>
+					<span class="progress"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/classie.js"></script>
+	<script src="js/notificationFx.js"></script>
+	<script>
+		(function () {
+			var str =
+				'<p>Your1111 preferences have been saved successfully. See all your settings in your <a href="#">profile';
+			var bttn = document.getElementById('notification-trigger');
+			// make sure..
+			bttn.disabled = false;
+			bttn.addEventListener('click', function () {
+				classie.add(bttn, 'active');
+				setTimeout(function () {
+					classie.remove(bttn, 'active');
+					var notification = new NotificationFx({
+						message: str,
+						layout: 'growl',
+						effect: 'genie',
+						type: 'notice',
+						onClose: function () {
+							bttn.disabled = false;
+						}
+					});
+					notification.show();
+				}, 1200);
+				this.disabled = true;
+			});
+		})();
+	</script>
+</body>
+
+</html>

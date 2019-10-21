@@ -1,0 +1,212 @@
+.header,
+.footer,
+.top-title {
+  min-width: 1152px;
+}
+
+.search-btn {
+  cursor: pointer;
+}
+
+/* 学习路线头部 */
+.top-title {
+  width: 100%;
+  height: 170px;
+  box-shadow: 5px 0 10px 5px #ccc;
+  background: url(/img/head/learnPathListBG.png) no-repeat;
+}
+
+.top-content {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+
+.top-content-name {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+}
+
+.top-content-name img {
+  vertical-align: bottom;
+  height: 72px;
+}
+
+.top-content-name span:nth-of-type(1) {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 55px;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.top-content-name span:nth-of-type(2) {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 55px;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.top-content-title{
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+}
+
+.top-content-title ul li{
+float: left;
+margin-right: 30px;
+font-size:20px;
+cursor: pointer;
+font-weight:bold;
+color:rgba(255, 255, 255, 0.7);
+padding-bottom: 10px;
+}
+.top-content-title ul li:nth-of-type(1) {
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 4px solid #fff;
+}
+
+.content {
+  height: auto;
+  width: 100%;
+  min-width: 1000px;
+  padding-top: 40px;
+}
+
+.content-info {
+  margin: 0 auto;
+  width: 1200px;
+  background: #fff;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px 0px 40px 48px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  
+}
+
+/* 学习路线item */
+.content-info-main{
+  width: 100%;
+  height: auto;
+  min-height: 555px;
+  padding: 10px 20px;
+}
+
+.course-box {
+  width: 47%;
+  cursor: pointer;
+  display: inline-block;
+  height: 150px;
+  margin: 10px 12px 30px 12px;
+}
+
+.course-cover,
+.img-up,
+.img-mid,
+.img-down {
+  display: inline-block;
+  width: 140px;
+  height: 145px;
+  position: relative;
+}
+
+.img-up,
+.img-mid,
+.img-down {
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.img-up {
+  z-index: 3;
+  bottom: 0px;
+}
+
+.img-mid {
+  z-index: 2;
+  bottom: -4px;
+  width: 128px;
+  left: 6px;
+  opacity: 0.6;
+}
+
+.img-down {
+  z-index: 1;
+  width: 113px;
+  left: 13px;
+  opacity: 0.3;
+  bottom: -8px;
+}
+
+.course-box:hover .course-content-p {
+  color: rgba(235, 0, 14, 1);
+}
+
+.course-box:hover .img-up {
+  bottom: 5px;
+}
+
+.course-box:hover .img-mid {
+  bottom: -2px;
+  left: 9px;
+  width: 128px;
+}
+
+.course-box:hover .img-down {
+  bottom: -7px;
+  left: 16px;
+  width: 113px;
+}
+
+/* item的内容 */
+.course-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 72%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 10px 0 30px 10px;
+
+}
+
+.course-content p {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: Heiti SC;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.course-content span {
+
+  width: 348px;
+  height: 70px;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}

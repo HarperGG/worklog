@@ -1,0 +1,126 @@
+.header,
+.footer,
+.top-title {
+  min-width: 1152px;
+}
+
+.search-btn {
+  cursor: pointer;
+}
+
+/* 个人日志头部 */
+.top-title {
+  width: 100%;
+  height: 283px;
+  box-shadow: 5px 0 10px 5px #ccc;
+  background: url(/img/head/logLogo.png) no-repeat;
+}
+
+.top-content {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+
+.top-content-name {
+  height: 80px;
+  width: 100%;
+}
+
+.top-content-name img {
+  vertical-align: bottom;
+  height: 72px;
+}
+
+.top-content-name span:nth-of-type(1) {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 55px;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.top-content-name span:nth-of-type(2) {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 55px;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.top-content-title {
+  width: 50%;
+  margin: 0 auto;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  height: 100px;
+  text-align: center;
+}
+
+.top-content-title p:nth-of-type(1) {
+  font-size: 40px;
+  line-height: 55px;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.top-content-title p:nth-of-type(2) {
+  font-size: 18px;
+  line-height: 55px;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.content {
+  height: auto;
+  width: 100%;
+  min-width: 1000px;
+  padding-top: 20px;
+}
+
+.content-info {
+  margin: 0 auto;
+  width: 1200px;
+  background: #fff;
+  height: auto;
+  min-height: 700px;
+  box-sizing: border-box;
+  padding: 30px 60px;
+  margin-bottom: 40px;
+}
+
+.content-info-title {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0;
+  color: #000;
+}
+.content-info-main{
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+}
+.content-info-video{
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #ccc;
+}
+
+.content-info-video span{
+  display: block;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-info-video div {
+width: 543px;
+height: 357px;
+background: url(/img/head/video.png) no-repeat;
+margin: 0 auto;
+margin-top: 50px;
+}

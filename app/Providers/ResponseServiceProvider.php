@@ -18,7 +18,7 @@ class ResponseServiceProvider extends ServiceProvider
             $content = array('code' => $code, 'msg' => $msg, 'data' => $data);
             return response()->json($content,$status);
         });
-        Response::macro('fail', function ($code = 100, $msg = 'fail', $data = '',$status = 200) {
+        Response::macro('fail', function ($code = 100, $msg = 'fail', $data = '',$status = 204) {
             $content = array('code' => $code, 'msg' => $msg, 'data' => $data);
             return response()->json($content,$status);
         });

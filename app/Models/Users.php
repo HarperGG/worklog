@@ -22,4 +22,12 @@ class Users extends \Illuminate\Foundation\Auth\User implements \Illuminate\Cont
     {
         return $this->user_password;
     }
+    public function articles()
+    {
+        return $this->hasMany('App\Models\Articles', 'article_user_id')->orderBy('article_create_time', 'desc');
+    }
+    public function artileCreateTime()
+    {
+        return $this->hasMany('App\Models\Articles', 'article_user_id', 'user_id')->select('article_create_time')->limit(1)->orderBy('article_create_time', 'desc');
+    }
 }

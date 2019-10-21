@@ -27,7 +27,7 @@ class ModifyPasswordPostRequest extends FormRequest
     {
         return [
             'new_password' => 'required|confirmed|string|between:6,16',
-            'new_password_confirmation'=>'required|string|between:6,16'
+            'new_password_confirmation' => 'required|string|between:6,16'
         ];
     }
 
